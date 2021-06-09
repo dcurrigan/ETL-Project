@@ -4,7 +4,7 @@ ETL Project Report
 > Created by Dale Currigan and Amin Ali  
 > June 2021  
   
-![ETL](/Resources/crime.png)    
+![ETL](/Resources/crime.jpg)    
 
 ## Table of contents  
 * [Introduction](#Project-Intro)  

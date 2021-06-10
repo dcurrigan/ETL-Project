@@ -160,7 +160,7 @@ Python SQLAlchemy was used to load the data into the database
 * Each table was sequentially loaded into the database with the to_sql function. 
 * Load order was important as the foreign key in crime_table referenced 'nyc_district' in schools_table
 
-sample code is bellow:
+sample code is below:
 
 ```
 # Establish connection to the youth_crime database

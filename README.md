@@ -50,7 +50,7 @@ The Intention of the project was to create a database containing data on youth c
 
 * The dataset was download from <a href="https://www.kaggle.com/ajkarella/nyc-crime-stats">Kaggle</a> in csv format and extracted into a Jupyter Notebook using the Pandas read_csv function.   
   
-##### New York Federal Reserve Bank   
+##### New York Federal Reserve Bank Data   
 
 * A web scrape was used to access the values from the interactive table of available on the <a href=https://www.newyorkfed.org/data-and-statistics/data-visualization/nyc-school-spending>NY Federal Reserve Website</a>.  
 * As the table is initially not visible when the page loads, and requires the user to click on an interactive tab, Splinter library was used
@@ -110,7 +110,7 @@ crime_table = crime_table.drop('age_group', axis=1).reset_index(drop=True)
 ```
 
   
-##### New York Federal Reserve Bank  
+##### New York Federal Reserve Bank Data  
 * The schools data was first converted to a data frame  
 * The webscraped and converted dataframe required considerably cleaning/reformatting
 * Column titles required re-naming  

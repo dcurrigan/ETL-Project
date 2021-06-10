@@ -91,8 +91,9 @@ schools_data = pd.read_html(str(results))
   - perp_race: Allows for analysis by demographic variable of ethnicity  
   - arrest_boro: Which of the 5 main NYC districs (or boroughs) the arrest occurs. Allows for geospatial analysis  
   - arrest_precict: Would allow for more precise geospacial analysis based on the location of each precinct   
-* Columns not thought to be relevant to the subject matter (factors affecting youth crime) were excluded (for example, latitude, longitude, law code, offense sub-category).  
-* The dataframe then filtered to keep only those offenders aged <18y.o., and the age column removed from the final table  
+  
+* Columns not thought to be relevant to the subject matter (i.e. an analysis of factors affecting youth crime) were excluded (for example, latitude, longitude, law code, offense sub-category).  
+* The dataframe was then filtered to keep only those offenders aged <18y.o., and the age column removed from the final table  
   
 ##### New York Federal Reserve Bank  
 * The schools data was first converted to a data frame  

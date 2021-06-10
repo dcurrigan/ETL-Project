@@ -19,11 +19,11 @@ ETL Project Report
 * [Status](#Status)     
 
 # Introduction
-This project covers...  
+This report contains covers...  
     
 # Motivation  
   
-Reports of high rates of crime are ever present in the media today. We were particularly interested to what extend youth crime contributes to crime rates, and the factors associated with youth crime. We investigated crime datasets and came upon the 2006-2019 NYC Crime Dataset<sup>1</sup>, originally accessed from New York Open Data, and available in CSV format from Kaggle. Our motivations for using this dataset were:  
+Reports of high rates of crime are ever present in the media today. We were particularly interested to what extend youth crime contributes to crime rates, and the factors associated with youth crime. We investigated crime datasets and came upon the 2006-2019 NYC Crime Dataset<sup>1</sup>, originally accessed from New York Open Data<sup>3</sup>, and available in CSV format from Kaggle. Our motivations for using this dataset were:  
   
 * Use the crime data from a well known, large urban city to model potential factors contributing to youth crime  
 * It would allow analysis of demographic factors (e.g. race, location, gender) contributing to crime  
@@ -81,11 +81,12 @@ Python SQLAlchemy was used to load the data into the database
 
 |No|Source|Link|
 |-|-|-|
-|1|2006-2019 NYC Crime Dataset         |https://www.kaggle.com/ajkarella/nyc-crime-stats| 
+|1|2006-2019 NYC Crime Dataset                |https://www.kaggle.com/ajkarella/nyc-crime-stats| 
 |2|New York Federal Reserve - School Spending |https://www.newyorkfed.org/data-and-statistics/data-visualization/nyc-school-spending|
- 
+|3|NYC Open Data                              |https://opendata.cityofnewyork.us/|  
   
-  
+
+
 # Project Structure  
 ```
 ETL-Project   

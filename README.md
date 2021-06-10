@@ -30,9 +30,9 @@ Reports of high rates of crime are ever present in the media today. We were part
   
 * Use the crime data from a well known, large urban city to model potential factors contributing to youth crime  
 * It would allow analysis of demographic factors (e.g. race, location, gender) contributing to crime  
-* CSV format allowing easy integration with Python Pandas  
+* CSV format would allow easy integration with Python Pandas  
 
-The dataset itself is large (615MB CSV) and contains datapoints on every arrest in NYC bewtween 2006 and 2019. There are 19 columns in total, relating to demographic of offenders, locations of offence, type of offence and information relating to legal procedings. Not all of these would be required for the intended project, the transformation process would requite filtering and truncating the original dataset.  
+The dataset itself is large (615MB CSV), and contains datapoints on every arrest in NYC bewtween 2006 and 2019. There are 19 columns in total, relating to demographic of offenders, locations of offence, type of offence and information relating to legal procedings. Not all of these would be required for the intended project, the transformation process would requite filtering and truncating the original dataset.  
   
 To investigate this problem further we sought to see what influence educational factors might have on crime rates. The <a href="https://www.newyorkfed.org/data-and-statistics/data-visualization/nyc-school-spending">New York Federal Reserve Bank</a> provides data on school spending per student, which we accessed via a web scrape. Our motivations for utilising this data were:  
   

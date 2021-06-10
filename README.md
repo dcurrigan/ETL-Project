@@ -39,11 +39,11 @@ The Intention of the project was to create a database of both NYC crime data for
 # Extract  
 ##### NYC Crime Dataset  
 
-* The dataset was download locally from Kaggle1 and extracted into a Jupyter Notebook using the Pandas read_csv function.   
+* The dataset was download locally from Kaggle<sup>1</sup> and extracted into a Jupyter Notebook using the Pandas read_csv function.   
   
 ##### New York Federal Reserve Bank   
 
-* A web scrape was used to access the values from the interactive table of available on the NY Federal Reserve Website.  
+* A web scrape was used to access the values from the interactive table of available on the NY Federal Reserve Website<sup>2</sup>.  
 * Splinter library was initiated and used to click on the data tabs for the table   
 * Beautiful soup was used to scrape the data and the html collected was then passed to Pandas read_html function to convert to a useable form  
   

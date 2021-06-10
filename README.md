@@ -26,7 +26,7 @@ Set-up details for the notebook and database can be found at the bottom of this 
     
 # Motivation  
   
-Reports of high rates of crime are ever present in the media today. We were particularly interested to what extend youth crime contributes to crime rates, and the factors associated with youth crime. We investigated crime datasets and came upon the 2006-2019 NYC Crime Dataset<sup>1</sup>, originally accessed from <a href="https://opendata.cityofnewyork.us/">New York Open Data</a>, and available in CSV format from Kaggle. Our motivations for using this dataset were:  
+Reports of high rates of crime are ever present in the media today. We were particularly interested to what extend youth crime contributes to crime rates, and the factors associated with youth crime. We investigated crime datasets and came upon the <a href="https://www.kaggle.com/ajkarella/nyc-crime-stats">2006-2019 NYC Crime Dataset</a>, originally accessed from <a href="https://opendata.cityofnewyork.us/">New York Open Data</a>, and available in CSV format from Kaggle. Our motivations for using this dataset were:  
   
 * Use the crime data from a well known, large urban city to model potential factors contributing to youth crime  
 * It would allow analysis of demographic factors (e.g. race, location, gender) contributing to crime  
@@ -34,7 +34,7 @@ Reports of high rates of crime are ever present in the media today. We were part
 
 The dataset itself is large (615MB CSV) and contains datapoints on every arrest in NYC bewtween 2006 and 2019. There are 19 columns in total, relating to demographic of offenders, locations of offence, tpye of offence and information relating to legal procedings. Not all of these would be required for the intended project.  
   
-To investigate this problem further we sought to see what influence educational factors might have on crime rates. The New York Federal Reserve Bank provides data on school spending per student<sup>2</sup>, which we accessed via a web scrape. Our motivations for utilising this data were:  
+To investigate this problem further we sought to see what influence educational factors might have on crime rates. The <a href="https://www.newyorkfed.org/data-and-statistics/data-visualization/nyc-school-spending">New York Federal Reserve Bank</a> provides data on school spending per student, which we accessed via a web scrape. Our motivations for utilising this data were:  
   
 * Allow analysis of the influence of school spending on crime rates  
 * Allow analysis of how school spending differs between NYC districts and if this affects the crime rate  
@@ -48,11 +48,11 @@ The Intention of the project was to create a database containing data on youth c
 # Extract  
 ##### NYC Crime Dataset  
 
-* The dataset was download locally from Kaggle<sup>1</sup> and extracted into a Jupyter Notebook using the Pandas read_csv function.   
+* The dataset was download locally from <a href="https://www.kaggle.com/ajkarella/nyc-crime-stats">Kaggle</a> and extracted into a Jupyter Notebook using the Pandas read_csv function.   
   
 ##### New York Federal Reserve Bank   
 
-* A web scrape was used to access the values from the interactive table of available on the NY Federal Reserve Website<sup>2</sup>.  
+* A web scrape was used to access the values from the interactive table of available on the <a href=https://www.newyorkfed.org/data-and-statistics/data-visualization/nyc-school-spending>NY Federal Reserve Website</a>.  
 * Splinter library was initiated and used to click on the data tabs for the table   
 * Beautiful soup was used to scrape the data and the html collected was then passed to Pandas read_html function to convert to a useable form  
   

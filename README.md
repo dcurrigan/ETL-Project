@@ -19,7 +19,7 @@ ETL Project Report
 * [Status](#Status)     
 
 # Introduction
-This project required demonstration of Extract, Transform, Load (ETL) processes on real world datasets. The following report outlines the results of project work.  
+This project required demonstration of Extract, Transform, Load (ETL) processes on real world datasets. The following report outlines the results of our project work.  
   
 Set-up details for the notebook and database can be found at the bottom of this document or via the link above    
   

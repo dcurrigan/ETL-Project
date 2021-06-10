@@ -8,12 +8,12 @@ ETL Project Report
 
 ## Table of contents  
 * [Introduction](#Project-Intro)  
-* [Project Structure](#Project-Structure)  
 * [Motivation](#Motivation)  
 * [Extract](#Extract)  
 * [Transform](#Tranform)
 * [Load](#Load)
 * [Datasets](#Datasets)  
+* [Project Structure](#Project-Structure)  
 * [Setup](#Setup)     
 
 # Introduction

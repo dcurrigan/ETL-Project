@@ -97,6 +97,7 @@ schools_data = pd.read_html(str(results))
   
 ##### New York Federal Reserve Bank  
 * The schools data was first converted to a data frame  
+* The webscraped and converted dataframe required considerably cleaning/reformatting
 * Column titles required re-naming  
 * Columns containing NaN values were present in the HTML converted table and these were removed with Pandas dropna function  
 * As the NYC Crime was only divided into the 5 Boroughs, not 31 districts, the summarised data for each Borough had to be selected for the table   
@@ -114,7 +115,26 @@ SQL was chosen as the data was in a relational structure which lends itself well
 
 Python SQLAlchemy was used to load the data into the database  
 * A connection was established to the database with the create_engine function.   
-* Each table was sequentially loaded into the database with the to_sql function.   
+* Each table was sequentially loaded into the database with the to_sql function. 
+* Load order was important as the foreign key in crime_table referenced 'nyc_district' in schools_table
+
+sample code is bellow:
+
+```
+# Establish connection to the youth_crime database
+connection_string = "postgres:postgres@localhost:5432/youth_crime_db"
+engine = create_engine(f'postgresql://{username}:{password}@localhost:5432/youth_crime_db')
+
+# Add the data to the schools_table
+schools_table.to_sql(name='schools_table', con=engine, if_exists='append', index=False)
+
+# Add the data to the crime_table
+crime_table.to_sql(name='crime_table', con=engine, if_exists='append', index=False)
+
+# Run a query to check the data has been added to the crime_table
+pd.read_sql_query('select * from crime_table', con=engine).head()
+
+```
 
 # Datasets 
 
@@ -133,9 +153,11 @@ ETL-Project
 |__ NY Crime.ipynb                        # Jupyter Notebook for the project
 |__ schema.sql                            # Table schemata for the database 
 |__ README.md                             # This file, the project report
+|__ config.py                             # Contains username and password details to access PostgreSQL
 |
 |__ Resources/                            # Directory for images contained in the report   
 |   |__ crime.jpg                    
+|   |__ ny_fed.png
 |   |__ ERD.png 
 |   |__ 
 |

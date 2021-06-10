@@ -63,9 +63,11 @@ The Intention of the project was to create a database of both NYC crime data for
 
   
 # Load    
-A new database was created (youth_crime_db) in PostGRESQL and table schemata defined for crime_table and school_table   
-* Both tables have primary keys (arrest_key for crime_table, nyc_district for school_table)  
-* Crime table also has a foreign key (arrest_boro)  
+A new database was created (youth_crime_db) in PostpreSQL and table schemata defined for crime_table and school_table.
+The entity relationship diagrom for the database can be seen below. 
+Both tables have primary keys (arrest_key for crime_table, nyc_district for school_table). Crime table also has a foreign key (arrest_boro), which references the 'nyc_district' column in the schools_table
+
+![ETL](/Resources/ERD.jpg) 
 
 SQL was chosen as the data was in a relational structure which lends itself well to SQL, as well as making it easy to access and query the dataset in the future.  
 

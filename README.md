@@ -39,7 +39,7 @@ To investigate this problem further we sought to see what influence educational 
 * Allow analysis of the influence of school spending on crime rates  
 * Allow analysis of how school spending differs between NYC districts and if this affects the crime rate  
 
-This dataset set contains a table of spending, on a per student basis, broken down by NYC district (or 'borough'). This would allow those using the data to analyse whether school spending in the different districts was correlated with higher crime rates or not. The data contains total school spending as well as spending on building services, leadership support services, and other key areas related to education.   
+This data contains a table of spending, on a per student basis, broken down by NYC district (or 'borough'). This would allow those using the data to analyse whether school spending in the different districts was correlated with higher crime rates or not. The data contains total school spending as well as spending on building services, leadership support services, and other key areas related to education.   
 
 The Intention of the project was to create a database containing data on youth crime (definined as age <18yrs) in NYC, which would link to data for school spending in the NYC area. Such a database could potentially be used by organisations such as the NYPD, NYC Education department, as well as NGO’s to reduce crime and improve outcomes in communities.   
   

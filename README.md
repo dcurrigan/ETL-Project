@@ -10,7 +10,7 @@ ETL Project Report
 * [Introduction](#Project-Intro)  
 * [Motivation](#Motivation)  
 * [Extract](#Extract)  
-* [Transform](#Tranform)
+* [Transform](#Transform)
 * [Load](#Load)
 * [Datasets](#Datasets)  
 * [Project Structure](#Project-Structure)  

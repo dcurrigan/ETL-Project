@@ -48,14 +48,33 @@ The Intention of the project was to create a database containing data on youth c
 # Extract  
 ##### NYC Crime Dataset  
 
-* The dataset was download locally from <a href="https://www.kaggle.com/ajkarella/nyc-crime-stats">Kaggle</a> and extracted into a Jupyter Notebook using the Pandas read_csv function.   
+* The dataset was download from <a href="https://www.kaggle.com/ajkarella/nyc-crime-stats">Kaggle</a> in csv format and extracted into a Jupyter Notebook using the Pandas read_csv function.   
   
 ##### New York Federal Reserve Bank   
 
 * A web scrape was used to access the values from the interactive table of available on the <a href=https://www.newyorkfed.org/data-and-statistics/data-visualization/nyc-school-spending>NY Federal Reserve Website</a>.  
-* Splinter library was initiated and used to click on the data tabs for the table   
-* Beautiful soup was used to scrape the data and the html collected was then passed to Pandas read_html function to convert to a useable form  
-  
+* As the table is initially not visible when the page loads, and requires the user to click on an interactive tab, Splinter library was used
+* This was initiated and used to click on the 'Comparative View' data tab to access for the table   
+* Beautiful soup was used to scrape the data and the html collected was then passed to Pandas read_html function to convert to a useable form
+* Sample code and images of the NY Federal Reserve data source
+
+```
+# Visit the New York Federal Reserve and click on 'COMPARATIVE VIEW' tab 
+url = "https://www.newyorkfed.org/data-and-statistics/data-visualization/nyc-school-spending"
+browser.visit(url)
+browser.links.find_by_partial_text('Comparative view').click()
+
+# Scrape the data
+html = browser.html
+soup = bs(html, 'html.parser')
+
+# Access the div with the interactive table 
+results = soup.find('div', {'id' : 'interactive-table'})
+
+# Convert the html to table with Pandas read_html
+schools_data = pd.read_html(str(results))
+
+```
   
 # Transform  
 ##### NYC Crime Dataset  

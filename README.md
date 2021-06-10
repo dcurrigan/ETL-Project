@@ -103,6 +103,33 @@ schools_data = pd.read_html(str(results))
 * As the NYC Crime was only divided into the 5 Boroughs, not 31 districts, the summarised data for each Borough had to be selected for the table   
 * Finally, as a different naming system was used for the Boroughs between datasets this had to be updated to allow future users of the database to perform joins when querying  the database  
 
+```
+# Convert the data to a dataframe
+schools_table = pd.DataFrame(schools_data[0])
+
+# Rename the table headers and drop NaN values
+schools_table.rename(columns={'NYC District': 'nyc_district',
+                              '$': 'school_spending',
+                              '$.1': 'instructional_spending',
+                              '$.2': 'instructional_support_services',
+                              '$.3': 'leadership_support_services',
+                              '$.4': 'ancillary_support_services',
+                              '$.5': 'building_services'}, inplace=True)
+
+schools_table.dropna(inplace=True, axis=1)
+
+# Select only the summarised means for each borough 
+schools_table = schools_table.set_index('nyc_district')
+
+schools_table = schools_table.loc[['Bronx', 'Brooklyn', 'Manhattan', 'Staten Island', 'Queens'],:]
+
+## Rename borough values to match those in the crime_table (to allow joins)
+schools_table.rename(index={'Bronx': 'B', 'Brooklyn': 'K', 'Manhattan': 'M', 
+                            'Staten Island': 'S', 'Queens': 'Q'},
+                     inplace=True)
+schools_table = schools_table.reset_index()
+
+```
   
 # Load    
 A new database was created (youth_crime_db) in PostpreSQL and table schemata defined for crime_table and school_table.

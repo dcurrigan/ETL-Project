@@ -216,7 +216,7 @@ ETL-Project
 
 # Contributors  
 - Dale Currigan [@dcurrigan](https://github.com/dcurrigan) - <dcurrigan@gmail.com>
-- Amin Ali 
+- Amin Ali [@AminSundrani](https://github.com/AminSundrani) - <amin.sundrani@outlook.com>
 
 
 ## Status

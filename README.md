@@ -39,7 +39,7 @@ To investigate this problem further we sought to see what influence educational 
 * Allow analysis of the influence of school spending on crime rates  
 * Allow analysis of how school spending differs between NYC districts and if this affects the crime rate  
 
-This dataset set contains a table of spending, on a per student basis, broken down by NYC district (or 'borough'). This would allow those using the data to analayse whether school spending in the different districts was correlated with higher crime rates or not. The data contains total school spending as well as spending on building services, leadership support services, and other key areas related to education.   
+This dataset set contains a table of spending, on a per student basis, broken down by NYC district (or 'borough'). This would allow those using the data to analyse whether school spending in the different districts was correlated with higher crime rates or not. The data contains total school spending as well as spending on building services, leadership support services, and other key areas related to education.   
 
 The Intention of the project was to create a database containing data on youth crime (definined as age <18yrs) in NYC, which would link to data for school spending in the NYC area. Such a database could potentially be used by organisations such as the NYPD, NYC Education department, as well as NGO’s to reduce crime and improve outcomes in communities.   
   
@@ -52,9 +52,9 @@ The Intention of the project was to create a database containing data on youth c
   
 ##### New York Federal Reserve Data   
 
-* A web scrape was used to access the values from the interactive table of available on the <a href=https://www.newyorkfed.org/data-and-statistics/data-visualization/nyc-school-spending>NY Federal Reserve Website</a>.  
+* A web scrape was used to access the values from the interactive table available on the <a href=https://www.newyorkfed.org/data-and-statistics/data-visualization/nyc-school-spending>NY Federal Reserve Website</a>.  
 * As the table is initially not visible when the page loads, and requires the user to click on an interactive tab, Splinter library was used
-* This was initiated and used to click on the 'Comparative View' data tab to access for the table   
+* This was initiated and used to click on the 'Comparative View' data tab to access for the table (see below)  
 * Beautiful soup was used to scrape the data and the html collected was then passed to Pandas read_html function to convert to a useable form  
   
   
@@ -112,11 +112,11 @@ crime_table = crime_table.drop('age_group', axis=1).reset_index(drop=True)
   
 ##### New York Federal Reserve Data  
 * The schools data was first converted to a data frame  
-* The webscraped and converted dataframe required considerably cleaning/reformatting
+* The webscraped and converted dataframe required considerable cleaning/reformatting
 * Column titles required re-naming  
 * Columns containing NaN values were present in the HTML converted table and these were removed with Pandas dropna function  
 * As the NYC Crime was only divided into the 5 Boroughs, not 31 districts, the summarised data for each Borough had to be selected for the table   
-* Finally, as a different naming system was used for the Boroughs between datasets this had to be updated to allow future users of the database to perform joins when querying  the database  
+* Finally, as a different naming system was used for the districts between tables this had to be updated to allow future users of the database to perform joins when querying  the database  
 
 Sample code:
 ```

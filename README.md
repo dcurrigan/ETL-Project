@@ -27,7 +27,7 @@ Reports of high rates of crime are ever present in the media today. We were part
 •	It would allow analysis of demographic factors (e.g. race, location, gender) contributing to crime  
 •	CSV format allowing easy integration with Python Pandas  
    
-To investigate this problem further we sought to see what influence educational factors might have on crime rates. The New York Federal Reserve Bank provides data on school spending per student2, which we accessed via a web scrape. Our motivations for utilising this data were:  
+To investigate this problem further we sought to see what influence educational factors might have on crime rates. The New York Federal Reserve Bank provides data on school spending per student<sup>2</sup>, which we accessed via a web scrape. Our motivations for utilising this data were:  
   
 •	Allow analysis of the influence of school spending on crime rates  
 •	Allow analysis of how school spending differs between NYC districts and if this affects the crime rate  

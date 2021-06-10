@@ -153,7 +153,7 @@ Both tables have primary keys (arrest_key for crime_table, nyc_district for scho
 
 ![ETL](/Resources/ERD.png) 
 
-SQL was chosen as the data was in a relational structure which lends itself well to SQL. Additionally we wanted users to be able to query, perform joins, and more advanced analytics which would not be possible with a non-relational database format. As it is a large dataset there may theoretically be some benefits in terms of speed. 
+SQL was chosen as the data was in table format which lends itself well to a realational structured database like SQL. Additionally we wanted users to be able to query, perform joins, and more advanced analytics which would not be possible with a non-relational database format. As it is a large dataset there may theoretically be some benefits in terms of speed. 
 
 Python SQLAlchemy was used to load the data into the database  
 * A connection was established to the database with the create_engine function.   

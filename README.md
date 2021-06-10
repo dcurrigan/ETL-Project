@@ -14,7 +14,9 @@ ETL Project Report
 * [Load](#Load)
 * [Datasets](#Datasets)  
 * [Project Structure](#Project-Structure)  
-* [Setup](#Setup)     
+* [Setup](#Setup)
+* [Contributors](#Contributors)  
+* [Status](#Status)     
 
 # Introduction
 This project covers...  

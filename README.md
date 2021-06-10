@@ -26,7 +26,7 @@ Set-up details for the notebook and database can be found at the bottom of this 
     
 # Motivation  
   
-Reports of high rates of crime are ever present in the media today. We were particularly interested to what extend youth crime contributes to crime rates, and the factors associated with youth crime. We investigated crime datasets and came upon the 2006-2019 NYC Crime Dataset<sup>1</sup>, originally accessed from New York Open Data, and available in CSV format from Kaggle. Our motivations for using this dataset were:  
+Reports of high rates of crime are ever present in the media today. We were particularly interested to what extend youth crime contributes to crime rates, and the factors associated with youth crime. We investigated crime datasets and came upon the 2006-2019 NYC Crime Dataset<sup>1</sup>, originally accessed from <a href="https://opendata.cityofnewyork.us/">New York Open Data</a>, and available in CSV format from Kaggle. Our motivations for using this dataset were:  
   
 * Use the crime data from a well known, large urban city to model potential factors contributing to youth crime  
 * It would allow analysis of demographic factors (e.g. race, location, gender) contributing to crime  

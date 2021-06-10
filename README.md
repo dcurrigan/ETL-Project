@@ -32,16 +32,16 @@ Reports of high rates of crime are ever present in the media today. We were part
 * It would allow analysis of demographic factors (e.g. race, location, gender) contributing to crime  
 * CSV format allowing easy integration with Python Pandas  
 
-The dataset itself is large (615MB CSV) and contains datapoints on every arrest in NYC bewtween 2006 and 2019. There are 19 columns in total, relating to demographic of offenders, locations of offence, tpye of offence and information relating to legal procedings. Not all of these would be required for the intended project.  
+The dataset itself is large (615MB CSV) and contains datapoints on every arrest in NYC bewtween 2006 and 2019. There are 19 columns in total, relating to demographic of offenders, locations of offence, type of offence and information relating to legal procedings. Not all of these would be required for the intended project, the transformation process would requite filtering and truncating the original dataset.  
   
 To investigate this problem further we sought to see what influence educational factors might have on crime rates. The <a href="https://www.newyorkfed.org/data-and-statistics/data-visualization/nyc-school-spending">New York Federal Reserve Bank</a> provides data on school spending per student, which we accessed via a web scrape. Our motivations for utilising this data were:  
   
 * Allow analysis of the influence of school spending on crime rates  
 * Allow analysis of how school spending differs between NYC districts and if this affects the crime rate  
 
-This dataset set contains a table of spending, on a per student basis, broken down by NYC district (or 'borough'). This would allow those using the data to analayse whether school spending in the different was correlated with higher crime rates or not. The data contains totla school spending as well as spending on building services, leadership support services, and other key areas related to education.   
+This dataset set contains a table of spending, on a per student basis, broken down by NYC district (or 'borough'). This would allow those using the data to analayse whether school spending in the different districts was correlated with higher crime rates or not. The data contains total school spending as well as spending on building services, leadership support services, and other key areas related to education.   
 
-The Intention of the project was to create a database containing data on youth crime (definined as (age <18yrs) in NYC, which would link to data for school spending in the NYC area. Such a database could potentially be used by organisations such as the NYPD, NYC Education department, as well as NGO’s to reduce crime and improve outcomes in communities.   
+The Intention of the project was to create a database containing data on youth crime (definined as age <18yrs) in NYC, which would link to data for school spending in the NYC area. Such a database could potentially be used by organisations such as the NYPD, NYC Education department, as well as NGO’s to reduce crime and improve outcomes in communities.   
   
   
 

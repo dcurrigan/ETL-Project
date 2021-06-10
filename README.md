@@ -151,7 +151,7 @@ A new database was created (youth_crime_db) in PostpreSQL and table schemata def
 The entity relationship diagrom for the database can be seen below. 
 Both tables have primary keys (arrest_key for crime_table, nyc_district for school_table). Crime table also has a foreign key (arrest_boro), which references the 'nyc_district' column in the schools_table
 
-![ETL](/Resources/ERD.jpg) 
+![ETL](/Resources/ERD.png) 
 
 SQL was chosen as the data was in a relational structure which lends itself well to SQL. Additionally we wanted users to be able to query, perform joins, and more advanced analytics which would not be possible with a non-relational database format. As it is a large dataset there may theoretically be some benefits in terms of speed. 
 

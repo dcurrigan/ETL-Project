@@ -95,6 +95,20 @@ schools_data = pd.read_html(str(results))
 * Columns not thought to be relevant to the subject matter (i.e. an analysis of factors affecting youth crime) were excluded (for example, latitude, longitude, law code, offense sub-category).  
 * The dataframe was then filtered to keep only those offenders aged <18y.o., and the age column removed from the final table  
   
+Sample code:
+```
+# Create a dataframe of  only the required columns and sort by arrest date
+crime_table = crime_data[['arrest_key', 'arrest_date', 'ofns_desc', 'age_group', 'perp_sex', 'perp_race', 'arrest_boro', 'arrest_precinct']]
+crime_table.sort_values('arrest_date', inplace=True)
+
+# Keep only the <18y.o Crime data
+crime_table = crime_table[crime_table['age_group'] == '<18']
+
+# Drop the now redundant 'age_group' column
+crime_table = crime_table.drop('age_group', axis=1).reset_index(drop=True)
+```
+
+  
 ##### New York Federal Reserve Bank  
 * The schools data was first converted to a data frame  
 * The webscraped and converted dataframe required considerably cleaning/reformatting
@@ -103,6 +117,7 @@ schools_data = pd.read_html(str(results))
 * As the NYC Crime was only divided into the 5 Boroughs, not 31 districts, the summarised data for each Borough had to be selected for the table   
 * Finally, as a different naming system was used for the Boroughs between datasets this had to be updated to allow future users of the database to perform joins when querying  the database  
 
+Sample code:
 ```
 # Convert the data to a dataframe
 schools_table = pd.DataFrame(schools_data[0])

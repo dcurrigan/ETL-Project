@@ -201,7 +201,7 @@ ETL-Project
 |   |__ crime.jpg                    
 |   |__ ny_fed.png
 |   |__ ERD.png 
-|   |__ 
+| 
 |
 |    
 
@@ -209,14 +209,11 @@ ETL-Project
   
 # Setup 
   
-* Step 1  
-* Step 2   
-* Step 3  
+1. Navigate to Kaggle to <a href="https://www.kaggle.com/ajkarella/nyc-crime-stats">download the 2006-2019 NYC Crime Dataset</a>
+2. This file needs to be in the same directory as NY Crime.ipynb
+3. Insert username and password details for PostgreSQL into the config.py  
+4. Run the NY Crime.ipynb Jupyter Notebook to Extract, Transform, and Load the data into the youth_crime_db 
   
-* Step 4 
-* Step 5    
-
-
 
 # Contributors  
 - Dale Currigan [@dcurrigan](https://github.com/dcurrigan) - <dcurrigan@gmail.com>

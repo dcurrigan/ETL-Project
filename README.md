@@ -64,14 +64,14 @@ The Intention of the project was to create a database of both NYC crime data for
   
 # Load    
 A new database was created (youth_crime_db) in PostGRESQL and table schemata defined for crime_table and school_table   
-•	Both tables have primary keys (arrest_key for crime_table, nyc_district for school_table)  
-•	Crime table also has a foreign key (arrest_boro)  
+* Both tables have primary keys (arrest_key for crime_table, nyc_district for school_table)  
+* Crime table also has a foreign key (arrest_boro)  
 
 SQL was chosen as the data was in a relational structure which lends itself well to SQL, as well as making it easy to access and query the dataset in the future.  
 
 Python SQLAlchemy was used to load the data into the database  
-•	A connection was established to the database with the create_engine function.   
-•	Each table was sequentially loaded into the database with the to_sql function.   
+* A connection was established to the database with the create_engine function.   
+* Each table was sequentially loaded into the database with the to_sql function.   
 
 # Datasets 
 

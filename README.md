@@ -54,8 +54,8 @@ The Intention of the project was to create a database containing data on youth c
 
 * A web scrape was used to access the values from the interactive table available on the <a href=https://www.newyorkfed.org/data-and-statistics/data-visualization/nyc-school-spending>NY Federal Reserve Website</a>.  
 * As the table is initially not visible when the page loads, and requires the user to click on an interactive tab, Splinter library was used
-* This was initiated and used to click on the 'Comparative View' data tab to access for the table (see below)  
-* Beautiful soup was used to scrape the data and the html collected was then passed to Pandas read_html function to convert to a useable form  
+* This was initiated and used to click on the 'Comparative View' data tab to access the table data (see below)  
+* Beautiful soup was used to scrape the data and then the html collected was passed to Pandas read_html function to convert to a useable form  
   
   
 Sample code and images of the NY Federal Reserve data source:
